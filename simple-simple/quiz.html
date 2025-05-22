@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Spine Quiz - The Human Spine Project</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="container">
+        <a href="index.html" class="logo">SpineProject</a>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="anatomy.html">Anatomy</a></li>
+          <li><a href="pathology.html">Pathology</a></li>
+          <li><a href="surgical.html">Surgical Procedures</a></li>
+          <li><a href="quiz.html" class="active">Quiz</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <button class="nav-toggle" aria-label="toggle menu">
+          <span class="hamburger"></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main class="container content-section">
+    <h1>Spine Quiz</h1>
+    <p>Test your knowledge about the human spine with this short quiz.</p>
+
+    <form id="quizForm" class="quiz-form" novalidate>
+      <fieldset>
+        <legend>1. How many cervical vertebrae are there?</legend>
+        <label><input type="radio" name="q1" value="7" required /> 7</label><br />
+        <label><input type="radio" name="q1" value="12" /> 12</label><br />
+        <label><input type="radio" name="q1" value="5" /> 5</label><br />
+        <label><input type="radio" name="q1" value="4" /> 4</label><br />
+      </fieldset>
+
+      <fieldset>
+        <legend>2. What is the function of intervertebral discs?</legend>
+        <label><input type="radio" name="q2" value="Shock absorption" required /> Shock absorption</label><br />
+        <label><input type="radio" name="q2" value="Blood production" /> Blood production</label><br />
+        <label><input type="radio" name="q2" value="Nerve conduction" /> Nerve conduction</label><br />
+        <label><input type="radio" name="q2" value="Muscle attachment" /> Muscle attachment</label><br />
+      </fieldset>
+
+      <fieldset>
+        <legend>3. Which condition involves a lateral curvature of the spine?</legend>
+        <label><input type="radio" name="q3" value="Scoliosis" required /> Scoliosis</label><br />
+        <label><input type="radio" name="q3" value="Spinal stenosis" /> Spinal stenosis</label><br />
+        <label><input type="radio" name="q3" value="Herniated disc" /> Herniated disc</label><br />
+        <label><input type="radio" name="q3" value="Fracture" /> Fracture</label><br />
+      </fieldset>
+
+      <button type="submit">Submit Quiz</button>
+    </form>
+
+    <p id="quizResult" role="alert" aria-live="polite" class="quiz-result"></p>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 The Human Spine Project. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
